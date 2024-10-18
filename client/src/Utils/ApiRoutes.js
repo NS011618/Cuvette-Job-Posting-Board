@@ -1,4 +1,4 @@
-const host = "http://localhost:5000";
+const host = "https://cuvette-job-posting-board.onrender.com";
 
 export const ApiRoutes = {
     register: `${host}/api/auth/register`,
