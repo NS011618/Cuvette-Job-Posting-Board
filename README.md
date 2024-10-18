@@ -82,9 +82,8 @@ jobboard/
 │   │   ├── index.js                # React DOM rendering
 │   │   └── styles.css              # Application styling
 │   └── public/
-│       └── index.html              # Entry point for React
-│
-├── server/                         # Node.js backend
+│   │   └── index.html              # Entry point for React
+│     # Node.js backend
 │   ├── config/                     # Configuration files (MongoDB, environment)
 │   ├── controllers/                # Express controllers for handling requests (auth, job posts)
 │   ├── models/                     # Mongoose schemas (User, JobPosting)
