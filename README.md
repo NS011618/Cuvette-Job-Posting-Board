@@ -38,8 +38,11 @@ In the server directory, create a `.env` file with the following variables:
 ```makefile
 MONGO_URI=<your-mongodb-uri>
 JWT_SECRET=<your-jwt-secret>
-NODEMAILER_EMAIL=<your-email>
-NODEMAILER_PASSWORD=<your-email-password>
+NODEMAILER_EMAIL=<your-nodemailer-email>
+NODEMAILER_PASSWORD=<your-nodemailer-password>
+TWILIO_ACCOUNT_SID=<your-twilio-account-sid>
+TWILIO_AUTH_TOKEN=<your-twilio-auth-token>
+TWILIO_PHONE_NUMBER=<your-twilio-phone-number>
 ```
 
 ### 4. Run the Application
