@@ -68,35 +68,6 @@ To create a job board with the following features:
 - **Job Posting** for authenticated companies.
 - **Email Automation** to notify candidates of new job postings.
 
-## Directory Structure
-
-```plaintext
-jobboard/
-│
-├── client/                         # React frontend
-│   ├── src/
-│   │   ├── components/             # Reusable components (Login, Register, JobPosting, OTPVerification)
-│   │   ├── pages/                  # Individual page components (Register, Login, Job Posting)
-│   │   ├── utils/                  # Helper functions (ApiRoutes, validation)
-│   │   ├── App.js                  # Main App component and route configuration
-│   │   ├── index.js                # React DOM rendering
-│   │   └── styles.css              # Application styling
-│   └── public/
-│   │   └── index.html              # Entry point for React
-│     # Node.js backend
-│   ├── config/                     # Configuration files (MongoDB, environment)
-│   ├── controllers/                # Express controllers for handling requests (auth, job posts)
-│   ├── models/                     # Mongoose schemas (User, JobPosting)
-│   ├── routes/                     # API routes (auth, jobs, email)
-│   ├── utils/                      # Utility functions (Nodemailer, SMS OTP generation)
-│   ├── middleware/                 # Middleware (JWT authentication)
-│   ├── server.js                   # Express server entry point
-│   └── .env                        # Environment variables (JWT secret, MongoDB URI,Nodemailer,Twilio)
-│
-└── README.md                       # Project documentation
-```
-
-
 ## Features
 
 ### 1. User Registration (Company)
