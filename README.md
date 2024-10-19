@@ -7,6 +7,12 @@ Job Posting Board with Email Automation (MERN Stack)
 ## Project Overview
 The Job Posting Board is a full-stack application where companies can register, verify their accounts via email and mobile, post jobs, and send automated emails to candidates. 
 
+## Website Link
+
+The Job Posting Board website is hosted on Render and can be accessed using the following URL:
+
+[Job Posting Board](https://cuvette-job-posting-board.onrender.com)
+
 ## Installation Guide
 
 ### 1. Clone the Repository
@@ -28,7 +34,6 @@ npm install
 #### Backend
 
 ```bash
-cd ../server
 npm install
 ```
 
@@ -50,7 +55,6 @@ TWILIO_PHONE_NUMBER=<your-twilio-phone-number>
 #### Start Backend
 
 ```bash
-cd server
 npm start
 ```
 
@@ -131,12 +135,9 @@ To create a job board with the following features:
 
 ### Job Posting
 - `POST /api/jobs`: Create a new job posting (Protected by JWT).
-- `GET /api/jobs`: Get all job postings (Protected by JWT).
 
 ### Email Automation
-- `POST /api/email/send`: Send job updates to candidates via email.
-
-
+- When New Jobs are created automatically the mail will be sent to candidates.
 
 ## License
 This project is licensed under the MIT License.
