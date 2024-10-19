@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios'; // For making API requests
 import { useLocation, useNavigate } from 'react-router-dom';
+import { ApiRoutes } from '../../Utils/ApiRoutes';
 
 function OTPVerification() {
     const [emailOTP, setEmailOTP] = useState('');
@@ -15,7 +16,7 @@ function OTPVerification() {
     const verifyOTP = async () => {
         try {
             // Make a request to the server to verify the OTPs
-            const res = await axios.post('http://localhost:5000/api/auth/verify', {
+            const res = await axios.post(ApiRoutes.verify, {
                 email,  // Pass the user's email
                 phone,  // Pass the user's phone number
                 emailOTP,

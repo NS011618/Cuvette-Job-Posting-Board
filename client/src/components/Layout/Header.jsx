@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { FaSignOutAlt, FaCog, FaFileAlt, FaQuestionCircle } from 'react-icons/fa'; // Icons for dropdown
+import { FaSignOutAlt, FaCog } from 'react-icons/fa'; // Icons for dropdown
 
 function Header({ isLoggedIn, setIsLoggedIn }) {
     const [showDropdown, setShowDropdown] = useState(false); // Dropdown visibility state

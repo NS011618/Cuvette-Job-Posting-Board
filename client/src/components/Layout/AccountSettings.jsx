@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios'; // For making API requests
+import { ApiRoutes } from '../../Utils/ApiRoutes';
 
 function AccountSettings() {
     const [userData, setUserData] = useState({
@@ -20,7 +21,7 @@ function AccountSettings() {
                 const token = localStorage.getItem('token');
                 
                 // Fetch user data from backend using token
-                const res = await axios.get('http://localhost:5000/api/auth/user', {
+                const res = await axios.get(ApiRoutes.user, {
                     headers: { Authorization: `Bearer ${token}` }
                 });
                 

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate from React Router v6
+import { ApiRoutes } from '../../Utils/ApiRoutes';
 
 function Register() {
     const [formData, setFormData] = useState({
@@ -30,7 +31,7 @@ function Register() {
             };
 
             const body = JSON.stringify({ name, email, phone, password, companyName, employeeSize });
-            const res = await axios.post('http://localhost:5000/api/auth/register', body, config);
+            const res = await axios.post(ApiRoutes.register, body, config);
 
             // Check if registration was successful
             if (res.status === 200) {
